@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "tslint-defocus"
+  ],
+  "rules": {
+    "defocus": true
+  }
+}

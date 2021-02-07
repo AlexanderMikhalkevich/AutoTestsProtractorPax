@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "module": "commonjs",
+    "target": "es2018",
+    "sourceMap": true,
+    "outDir": "build",
+    "types": ["jasmine", "node"]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
