@@ -1,2 +1,2 @@
-# AutoTestsProtractorPax
-Automation tests for MainPage (Protractor)
+# Automation tests for MainPage
+Framework - Protractor
