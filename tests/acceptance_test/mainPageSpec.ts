@@ -188,7 +188,7 @@ import MainPage from '../../pages/mainPagePO';
 
         // BTC Sell offer
 
-        xit ('C62551 User is navigated on the page with adress according to chosen offer type and cryptocurrency (BTC Sell offer)', async () => {
+        it ('C62551 User is navigated on the page with adress according to chosen offer type and cryptocurrency (BTC Sell offer)', async () => {
     
             await MainPage.selectSellOfferType();
             await browser.sleep(500);

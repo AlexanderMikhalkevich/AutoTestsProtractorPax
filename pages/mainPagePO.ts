@@ -6,9 +6,7 @@ class MainPage {
         addField: $('[placeholder="add new todo here"]'),
         checkedBox: element(by.model('todo.done')),
         addButton: $('[value="add"]'),
-        
         createAccount: $('#open-register-modal'),
-        
         createAccAndWalletBtn: $('#btn-register-modal'),
         registerEmail: $('#register_email'),
         registerEmailConfirmation: $('#register_email_confirmation'),
@@ -19,17 +17,13 @@ class MainPage {
         viewAllNotifications: $('a.heading-sublink.pull-right'),
         
         titleText: $('title'), 
-
+        //mainWidget
         homepageWidget: $('#mainWidget'),
-
         widgetBuyOfferTypeBtn: $('button[tabid="0"]'), 
-        
         widgetSellOfferTypeBtn: $('button[tabid="1"]'), 
-
+        //Modal window "Payment method"
         widgetPaymentMethodsBtn: element(by.buttonText('Show all')),
-
         widgetPaymentMethodsAllBtn: element(by.buttonText('Select All')),
-
         widgetPaymentMethodsBanktranAllBtn: element(by.buttonText('View offers for bank transfers')),
 
         //Search field
@@ -46,28 +40,26 @@ class MainPage {
         //Bank Transfer
         widgetPaymentMethodSelectBtn:  $('.Tabs__inner button:nth-child(2)'),
 
-        // Section Choises (Bank Transfer->First element)
+        // Section "Choises" (Bank Transfer->First element)
         widgetPaymentMethodChoiseSection: $('.modal-body > div:nth-child(5) > button:nth-child(1)'),       
 
         widgetPaymentMethodPopularSelectBtn:  $('.modal-body div:nth-child(3) button:nth-child(1)'),     
         
+        // Amount picker section
         widgetCurrencyPickerBtn: element(by.buttonText('Any currency')),
-      
         widgetCurrencyPicker: element(
             by.xpath('//div[text()="British Pound"]/../..')
         ),
 
-        widgetCurrencyAmount: $('#mainWidgetForm_AmountYouPay_Field'),
-        
+        widgetCurrencyAmount: $('#mainWidgetForm_AmountYouPay_Field'),   
         widgetSearchBtn: element(by.buttonText('Find Offers')),
 
+        //Crypto currency buttons
         widgetCryptoCurrencyTetherBtn: $('.MainWidgetBody__widget>div:nth-child(2) button:nth-child(2)'),
-
         widgetCryptoCurrencyBTCBtn: $('.MainWidgetBody__widget>div:nth-child(2) button:nth-child(1)'),
 
         //Elements on the <host>/{buy/sell-bitcoin/tether} page
         
-
         //BuySellSidebar - Cryptocurrency field
         BuySellSidebarCryptocurrencyDropDawn: element(
             by.xpath('//*[@id="tour-filters"]/div[1]/div[1]/div/div/button')
@@ -103,8 +95,6 @@ class MainPage {
         await this.elements.widgetBuyOfferTypeBtn.click();
     }
 
-
-
     // Select CryptoCurrency
     
     async selectTetherCryptoCurrency() {
@@ -114,7 +104,6 @@ class MainPage {
     async selectBtcCryptoCurrency() {
         await this.elements.widgetCryptoCurrencyBTCBtn.click();
     }
-
 
 
     async selectWidgetPaymentMethod() {
@@ -145,7 +134,6 @@ class MainPage {
     }
 
        
-    
     // Payment method section - BTC, Sell offer
 
     async selectWidgetPaymentMethodAll() {
@@ -156,9 +144,7 @@ class MainPage {
 
     
     
-    
-    
-    //ToDo
+    //ToDo ---------------
 
 
     async openCreateUserModal() {
