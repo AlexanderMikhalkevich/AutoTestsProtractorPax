@@ -28,9 +28,7 @@ class MainPage {
 
         //Search field
         widgetSearchPaymentMethInput: $('.qa-paymentMethodPickerModalSearch'), 
-
         widgetSearchResultBankTransferElement: $('.qa-paymentMethodPickerModalItemName'),
-
         widgetPaymentMethodsInput: element(
             by.xpath('//*[@id="mainWidget"]/div[4]/div/input')
         ), 
@@ -110,27 +108,23 @@ class MainPage {
         await this.elements.widgetPaymentMethodsBtn.click();
         await this.elements.widgetPaymentMethodsModal.isDisplayed();
         await this.elements.widgetPaymentMethodSelectBtn.click();
-        await this.elements.widgetPaymentMethodPopularSelectBtn.click();
-        
+        await this.elements.widgetPaymentMethodPopularSelectBtn.click();     
     }
 
     
     async selectWidgetCurrency() {
         await this.elements.widgetCurrencyPickerBtn.click();
         await this.elements.widgetCurrencyPicker.isDisplayed();
-        await this.elements.widgetCurrencyPicker.click();
-                
+        await this.elements.widgetCurrencyPicker.click();              
     }
 
     async fillInAnyAmount() {
-        await this.elements.widgetCurrencyAmount.sendKeys('50');
-                
+        await this.elements.widgetCurrencyAmount.sendKeys('50');             
     }  
 
 
     async widgetSearch() {
-        await this.elements.widgetSearchBtn.click();
-        
+        await this.elements.widgetSearchBtn.click();       
     }
 
        
