@@ -145,7 +145,7 @@ import MainPage from '../../pages/mainPagePO';
     
         // BTC Buy offer
 
-        xit ('C62551 User is navigated on the page with adress according to chosen offer type and cryptocurrency (BTC Buy offer)', async () => {
+        it ('C62551 User is navigated on the page with adress according to chosen offer type and cryptocurrency (BTC Buy offer)', async () => {
     
             await MainPage.selectBuyOfferType();
             await browser.sleep(500);
@@ -157,7 +157,7 @@ import MainPage from '../../pages/mainPagePO';
     
         })
 
-        xit ('C62559 "Cryptocurrency" field contains chosen crypto', async () => {
+        it ('C62559 "Cryptocurrency" field contains chosen crypto', async () => {
     
             await MainPage.selectBuyOfferType();
             await browser.sleep(500);
@@ -169,7 +169,7 @@ import MainPage from '../../pages/mainPagePO';
     
         })
 
-        xit ('C66939 "Payment method" field contains chosen method', async () => {
+        it ('C66939 "Payment method" field contains chosen method', async () => {
     
             await MainPage.selectBuyOfferType();
             await browser.sleep(500);
